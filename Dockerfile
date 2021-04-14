@@ -1,8 +1,10 @@
 FROM golang:1.14.9-alpine
 
-COPY ./x-sync-api.herokuapp.com /x-sync-api.herokuapp.com
+RUN mkdir /build
 
-WORKDIR /x-sync-api.herokuapp.com
+COPY x-sync-api.herokuapp.com /build
+
+WORKDIR /build
 
 RUN go build
 
