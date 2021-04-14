@@ -1,4 +1,4 @@
-module sync-api.herokuapp.com
+module x-sync-api.herokuapp.com
 
 go 1.15
 
